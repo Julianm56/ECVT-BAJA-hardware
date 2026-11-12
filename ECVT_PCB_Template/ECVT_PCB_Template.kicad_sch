@@ -4498,7 +4498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
 			(at 187.325 29.21 0)
 			(hide yes)
 			(show_name no)
