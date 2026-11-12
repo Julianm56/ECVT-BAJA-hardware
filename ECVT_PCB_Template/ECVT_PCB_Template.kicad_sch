@@ -686,6 +686,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:L7805"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L7805"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.635 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L7805_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "L7805_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "TJA1051T:TJA1051T"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -982,145 +1140,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2462,6 +2481,16 @@
 		)
 		(uuid "385b3b15-140c-4f94-b654-8f0d6912290e")
 	)
+	(text "5V Voltage Regulator"
+		(exclude_from_sim no)
+		(at 171.196 57.912 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f0649d4d-d32c-4a7d-a2e2-deb16d96e72b")
+	)
 	(junction
 		(at 81.28 33.02)
 		(diameter 0)
@@ -2473,6 +2502,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1fffbefc-7a0e-4bdd-8976-b89d998b9840")
+	)
+	(junction
+		(at 186.69 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56da1f37-0a40-4d97-9c30-5b7af8383ee2")
 	)
 	(junction
 		(at 29.21 29.21)
@@ -2694,6 +2729,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 33.02) (xy 186.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11323d8a-7028-4daa-94f5-70d4ecc23d41")
+	)
+	(wire
+		(pts
 			(xy 72.39 33.02) (xy 81.28 33.02)
 		)
 		(stroke
@@ -2701,6 +2746,16 @@
 			(type default)
 		)
 		(uuid "18bbc4d9-404b-4f69-9205-ec16ee486170")
+	)
+	(wire
+		(pts
+			(xy 199.39 25.4) (xy 199.39 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1953715a-f9a9-45f8-a5ec-dd05fd923169")
 	)
 	(wire
 		(pts
@@ -2764,6 +2819,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 25.4) (xy 179.07 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77fb2c32-ce7a-4fa5-a99c-5731c7086256")
+	)
+	(wire
+		(pts
 			(xy 41.91 31.75) (xy 41.91 33.02)
 		)
 		(stroke
@@ -2771,6 +2836,16 @@
 			(type default)
 		)
 		(uuid "798d0ec6-5de5-40af-bb45-24d4294fa6e2")
+	)
+	(wire
+		(pts
+			(xy 194.31 25.4) (xy 199.39 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8087448a-e107-49f9-8e5e-264a9bd702a4")
 	)
 	(polyline
 		(pts
@@ -2813,6 +2888,28 @@
 		)
 		(uuid "99dc4949-fbcc-4796-937c-6f4402b85ab3")
 	)
+	(polyline
+		(pts
+			(xy 213.4705 60.2664) (xy 213.4705 13.2764)
+		)
+		(stroke
+			(width 0.127)
+			(type dash)
+			(color 72 0 0 1)
+		)
+		(uuid "a252085a-d8c0-41a2-91f4-e6b914fdf35b")
+	)
+	(polyline
+		(pts
+			(xy 160.3989 60.9216) (xy 213.36 60.96)
+		)
+		(stroke
+			(width 0.127)
+			(type dash)
+			(color 72 0 0 1)
+		)
+		(uuid "a2c3d249-c201-4fd6-8481-31987b279460")
+	)
 	(wire
 		(pts
 			(xy 180.34 135.89) (xy 186.69 135.89)
@@ -2822,6 +2919,36 @@
 			(type default)
 		)
 		(uuid "a6392a56-1789-496a-a467-262d6f25d717")
+	)
+	(wire
+		(pts
+			(xy 186.69 38.1) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7367bb6-d597-4141-b951-88e04b042cba")
+	)
+	(wire
+		(pts
+			(xy 186.69 38.1) (xy 171.45 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac10a500-5b38-4669-a348-90c1a257f236")
+	)
+	(wire
+		(pts
+			(xy 171.45 30.48) (xy 171.45 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad69541c-1934-4377-91f4-68076b163027")
 	)
 	(polyline
 		(pts
@@ -2844,6 +2971,16 @@
 			(color 72 0 0 1)
 		)
 		(uuid "d204d98d-32c4-4f7f-a314-5d6697f9882b")
+	)
+	(wire
+		(pts
+			(xy 186.69 38.1) (xy 199.39 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc31760a-65ca-4fe1-b058-33f13bcbdd2a")
 	)
 	(polyline
 		(pts
@@ -2896,7 +3033,17 @@
 		)
 		(uuid "2e2fe83b-5529-4c60-949b-8ede06a5754c")
 	)
-	(label "+5V"
+	(label "VIN"
+		(at 29.21 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "323db877-2657-413f-a1b9-b6a9cfa723f5")
+	)
+	(label "REG_VIN"
 		(at 186.69 133.35 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2908,6 +3055,29 @@
 		(uuid "37ee3e4b-c9df-4cd5-90e1-7effe862fcdb")
 		(property "+5V" ""
 			(at 186.69 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(label "REG_VIN"
+		(at 74.93 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "389f8fbf-43be-4deb-9ac5-e66a0354f80a")
+		(property "+5V" ""
+			(at 74.93 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3054,6 +3224,29 @@
 		)
 		(uuid "62e2dacf-9434-422d-89dd-333194f5d466")
 	)
+	(label "REG_VIN"
+		(at 196.85 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ec23441-a57a-4719-8d67-860c7946bf8b")
+		(property "+5V" ""
+			(at 196.85 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(label "CAN_LOW"
 		(at 36.83 27.94 90)
 		(fields_autoplaced yes)
@@ -3120,29 +3313,6 @@
 					(italic yes)
 				)
 				(justify left)
-			)
-		)
-	)
-	(label "+5V"
-		(at 29.21 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b13b0acd-4462-44c1-a575-9286c7ff2e89")
-		(property "+5V" ""
-			(at 29.21 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -3238,6 +3408,16 @@
 			)
 		)
 	)
+	(label "VIN"
+		(at 172.72 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d716c227-e863-496d-b8af-5e3bf1528c05")
+	)
 	(label "CAN_HIGH"
 		(at 34.29 27.94 90)
 		(fields_autoplaced yes)
@@ -3258,29 +3438,6 @@
 					(italic yes)
 				)
 				(justify left)
-			)
-		)
-	)
-	(label "+5V"
-		(at 77.47 33.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ee991ac3-d1d8-4706-9bd9-d9e1e14b39ca")
-		(property "+5V" ""
-			(at 77.47 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -3306,6 +3463,16 @@
 				(justify right)
 			)
 		)
+	)
+	(label "GND"
+		(at 186.69 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f71a7e7a-f0a1-4c7c-9200-d5cee6296b55")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -4300,8 +4467,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 29.21 27.94 0)
+		(lib_id "Regulator_Linear:L7805")
+		(at 186.69 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4309,10 +4476,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6cad21f4-e17e-4322-9c29-6df2ae261655")
-		(property "Reference" "#PWR03"
-			(at 29.21 31.75 0)
-			(hide yes)
+		(fields_autoplaced yes)
+		(uuid "a32270bf-c07a-4bc7-811c-6687990a6754")
+		(property "Reference" "U2"
+			(at 186.69 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4321,8 +4488,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 29.21 22.86 90)
+		(property "Value" "L7805"
+			(at 186.69 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4332,7 +4499,94 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 27.94 0)
+			(at 187.325 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
+			(at 186.69 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
+			(at 186.69 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "1f3fab31-7ffb-4d0b-9674-e99259766093")
+		)
+		(pin "1"
+			(uuid "efd03bb3-4ea5-47ea-a9a8-34cd0ead9cf8")
+		)
+		(pin "2"
+			(uuid "ead4b91d-26ab-4740-8e7f-9fe6154b2820")
+		)
+		(instances
+			(project "ECVT_PCB_Template"
+				(path "/747ecfd9-0f2c-48fd-b60a-33eeca55acd6"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 199.39 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b21a4de1-2929-4d65-bdd1-5d9f9e8b8beb")
+		(property "Reference" "C4"
+			(at 203.2 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 203.2 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 200.3552 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +4597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 27.94 0)
+			(at 199.39 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4353,8 +4607,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 29.21 27.94 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 199.39 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4365,12 +4619,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "10fd33ac-544c-48fb-9477-37765f5fca78")
+			(uuid "942102af-c916-4aa6-b0bd-ce82bbbf749b")
+		)
+		(pin "2"
+			(uuid "c85bc07e-a0b7-41a4-af16-e5551c0f35b5")
 		)
 		(instances
 			(project "ECVT_PCB_Template"
 				(path "/747ecfd9-0f2c-48fd-b60a-33eeca55acd6"
-					(reference "#PWR03")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4532,6 +4789,88 @@
 			(project "ECVT_PCB_Template"
 				(path "/747ecfd9-0f2c-48fd-b60a-33eeca55acd6"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 171.45 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecb347b2-5e91-4b36-8293-a53519f43c9f")
+		(property "Reference" "C3"
+			(at 175.26 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.33uF"
+			(at 175.26 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 172.4152 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8aa8c075-a575-4a13-9835-312af368ece5")
+		)
+		(pin "2"
+			(uuid "5d7580ce-68a5-4b35-af40-e35b5838a317")
+		)
+		(instances
+			(project "ECVT_PCB_Template"
+				(path "/747ecfd9-0f2c-48fd-b60a-33eeca55acd6"
+					(reference "C3")
 					(unit 1)
 				)
 			)
