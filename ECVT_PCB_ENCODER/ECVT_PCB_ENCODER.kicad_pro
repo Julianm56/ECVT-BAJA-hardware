@@ -129,7 +129,7 @@
         "zones_intersect": "error"
       },
       "rules": {
-        "max_error": 0.005,
+        "max_error": 0.001,
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
@@ -633,6 +633,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -645,7 +653,7 @@
         "uuid": "747ecfd9-0f2c-48fd-b60a-33eeca55acd6"
       }
     ],
-    "used_designators": "H5-6",
+    "used_designators": "TP1-9,H1-6,#PWR19-24",
     "variants": []
   },
   "sheets": [
